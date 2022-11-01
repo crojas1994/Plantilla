@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>293ab51f-9e57-427f-a64e-236fe448aa0b</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\VentanillaUnica.Tramites.Application\VentanillaUnica.Tramites.Application.csproj" />
+    <ProjectReference Include="..\..\VentanillaUnica.Tramites.Common\VentanillaUnica.Tramites.Common.csproj" />
+    <ProjectReference Include="..\..\VentanillaUnica.Tramites.Data\VentanillaUnica.Tramites.Data.csproj" />
+  </ItemGroup>
+
+</Project>
